@@ -10,8 +10,8 @@ import logging
 from typing import List, Tuple, Dict
 from tenacity import retry, stop_after_attempt, wait_exponential
 
-# from google import genai
-import google.generativeai as genai
+from google import genai
+#import google.generativeai as genai
 
 
 

@@ -33,12 +33,12 @@ The rise of powerful LLMs has brought with it the potential for generating reali
    *   `unidecode`: For handling accented characters.
    *   `scholarly`: For accessing Google Scholar data.
    *   `tenacity`: For implementing retry logic.
-   *   `google-generativeai`: For accessing Google Gemini. 
+   *   `google-genai`: For accessing Google Gemini. 
 
    **Install requirements:**
 
    ```bash
-   pip install PyPDF2 pydantic requests pandas unidecode scholarly tenacity google-generativeai
+   pip install PyPDF2 pydantic requests pandas unidecode scholarly tenacity google-genai
    ```
 
 3.  **Google Gemini API Key:**
