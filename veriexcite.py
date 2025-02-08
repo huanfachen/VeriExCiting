@@ -10,12 +10,18 @@ import logging
 from typing import List, Tuple, Dict
 from tenacity import retry, stop_after_attempt, wait_exponential
 
-from google import genai
+# from google import genai
+import google.generativeai as genai
+
 
 
 # --- Configuration ---
-GOOGLE_API_KEY = "YOUR_API_KEY"
-# Replace with your Google Gemini API key
+# Read the API key from the file
+with open('api_key', 'r') as file:
+    key = file.readline().strip()
+GOOGLE_API_KEY = key
+
+# Save your Google Gemini API key in a text file named api_key
 # Apply for a key at https://ai.google.dev/aistudio with 1500 requests per day for FREE
 
 
